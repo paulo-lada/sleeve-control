@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .home {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 8px;
+  }
+  
+$scroll-track:    #f1f1f1;
+$scroll-thumb:    #888;
+$scroll-hover:    #555;
+
+  
+// custom scrollbar
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: $scroll-track;
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: $scroll-thumb;
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: $scroll-hover;
+}
+// custom scrollbar
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

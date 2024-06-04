@@ -1,0 +1,19 @@
+
+
+  .toggleDiv{
+    margin-left: auto;
+    margin-top : .5rem;
+    margin-right : 1.7rem;
+  }
+
+  .toggleLabel{
+    display: flex;
+    position: absolute;
+    width: 6rem;
+    place-content: space-around;
+    right:  .1rem;
+
+    h6{
+      font-size: .5rem;
+    }
+  }

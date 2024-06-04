@@ -1,0 +1,32 @@
+<form (submit)="submitForm()" class="form-container">
+    <div>
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" [(ngModel)]="product.title" required (click)="selectOnFocus($event)">
+    </div>
+    <div>
+      <label for="description">Descrição:</label>
+      <textarea id="description" name="description" [(ngModel)]="product.description" (click)="selectOnFocus($event)"></textarea>
+    </div>
+    <div>
+        <label for="type">Tipo:</label>
+        <select id="type" name="type" [(ngModel)]="product.type">
+          <option value="Sleeve">Sleeve</option>
+          <option value="Carta">Carta</option>
+          <option value="Outros">Outros</option>
+        </select>
+      </div>
+    <div>
+      <label for="quantity">Quantidade:</label>
+      <input type="number" id="quantity" name="quantity" [(ngModel)]="product.quantity" (click)="selectOnFocus($event)">
+    </div>
+    <div style="margin-bottom: 1rem; text-align: center;">
+      <label for="photo">Foto:</label>
+      <img *ngIf="product.photo" [src]="product.photo" alt="Product Photo">
+      <input type="file" id="photo" name="photo" (change)="onPhotoChange($event)">
+    </div>
+    <div class="buttonContainer">
+        <button type="button" style="background-color: red;" (click)="cancel()">Cancelar</button>
+        <button type="submit">Cadastrar Produto</button>
+    </div>
+  </form>
+  

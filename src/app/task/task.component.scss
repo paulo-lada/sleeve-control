@@ -1,0 +1,91 @@
+.task {
+    width: 90%;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+
+.taskEditing{
+  cursor: pointer;
+}
+  
+  .task h3 {
+    font-size: 1.2rem;
+    margin: 0 0 5px;
+  }
+
+  .task .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task .title h3 {
+    margin: 0;
+  }
+  
+  .task .title i {
+    cursor: pointer;
+    color: #e74c3c;
+  }
+  
+  .task .title i:hover {
+    color: #c0392b;
+  }
+  
+  .task input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    font-family: inherit; /* Adiciona a mesma fonte do h3 */
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .task textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    height: fit-content;
+    font-size: .9rem;
+    font-family: inherit; /* Adiciona a mesma fonte do h3 */
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    resize: none;
+
+  }
+    
+  .task input {
+    height: 30px;
+  }
+  
+  .task textarea {
+    height: 100px;
+  }
+  
+  .description{
+    font-size: .8rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    color: rgb(82, 82, 82);
+  }
+  
+  .fa-trash{
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .fa-trash:hover{
+    color: red;
+  }

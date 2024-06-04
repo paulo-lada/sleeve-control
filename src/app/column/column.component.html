@@ -1,0 +1,16 @@
+<div class="column">
+    <div class="title">
+        <div class="toggleTitleDiv">
+            <h2>{{ column.Title }}</h2>
+            <div *ngIf="column.Type == 1 || column.Type == 2" style="margin-left: auto;">
+                <app-column-switch (switch)="switchView($event)"></app-column-switch>
+            </div>
+        </div>
+        <div (click)="addTask()" class="addTask">
+            <i class="fa-solid fa-plus"></i> Adicionar Tarefa
+        </div>
+    </div>
+    <div class="taskContainer custom-scrollbar">
+        <app-task *ngFor="let task of column.Tasks" [task]="task" (deleteTaskEvent)="deleteTask($event)"></app-task>
+    </div>
+</div>

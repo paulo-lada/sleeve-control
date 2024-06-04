@@ -1,0 +1,17 @@
+<div class="task">
+  <div class="title">
+    <div *ngIf="!isEditing" (click)="enableEdit(1)">
+      <h3>{{ task.Title }}</h3>
+    </div>
+    <div *ngIf="isEditing">
+      <input id="titleInput" [(ngModel)]="editedTitle"  />
+    </div>
+    <i (click)="deleteTask()" class="fa-solid fa-trash"></i>
+  </div>
+  <div class="description">
+    <div *ngIf="!isEditing" (click)="enableEdit(2)" [innerHTML]="nl2br(task.Description)"></div>
+    <div *ngIf="isEditing">
+      <textarea id="descriptionInput" [(ngModel)]="editedDescription"></textarea>
+    </div>
+  </div>
+</div>

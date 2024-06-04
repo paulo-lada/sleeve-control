@@ -1,0 +1,9 @@
+<button class="add-button" (click)="toggleOptions()">+</button>
+<div *ngIf="showOptions" class="options-menu">
+    <div (click)="openProductForm()" class="add" style="margin-bottom: 15px;">
+        <i class="fa-solid fa-plus"></i> Cadastrar Produto
+    </div>
+    <div (click)="openPersonForm()" class="add">
+        <i class="fa-solid fa-plus"></i> Cadastrar Pessoa
+    </div>
+</div>
